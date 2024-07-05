@@ -26,7 +26,7 @@ setInterval(() => {
   if (second > 0) {
     time[4] = nol(second);
   }
-  if ((Number(time[2])<22) && (Number(time[2])>7)){
+  if ((Number(time[2])<20) && (Number(time[2])>7)){
     currentTimeHtml ="<img class='boardsign' src='https://img.shields.io/badge/Day-6adea8?style=social&logo=huawei' title='好好学习~'><div id='runtime'>" + time[0] + ' YEAR ' + time[1] + ' DAYS ' + time[2] + ' : ' + time[3] + ' : ' + time[4] + '</div>';
   }
   else{
