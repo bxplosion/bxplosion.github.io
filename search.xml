@@ -189,11 +189,22 @@
     
     
     <entry>
-      <title>分类页</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title></title>
+      <link href="/css/categorybar.css"/>
+      <url>/css/categorybar.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[#categoryBar {    width: 100% !important;  }  ul.categoryBar-list {    margin: 5px 5px 0 5px !important;    padding: 0 !important;  }  li.categoryBar-list-item {    font-weight: bold;    display: inline-block;    height: 180px !important;    margin: 5px 0.5% 0 0.5% !important;    background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);    border-radius: 10px;    padding: 25px 0 25px 25px !important;    box-shadow: rgba(50,50,50,0.3) 50px 50px 50px 50px inset;    overflow: hidden;    background-size: 100% !important;    background-position: center !important;  }  li.categoryBar-list-item:hover {    background-size: 110% !important;    box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);  }  li.categoryBar-list-item:hover span.categoryBar-list-descr {    transition: all 0.5s;    transform: translate(-100%, 0);  }  a.categoryBar-list-link {    color: #fff !important;    font-size: 20px !important;  }  a.categoryBar-list-link::before {    content: '|  ' !important;    color: #fff !important;    font-size: 20px !important;  }  a.categoryBar-list-link:after {    content: '';    position: relative;    width: 0;    bottom: 0;    display: block;    height: 3px;    border-radius: 3px;    background-color: #fff;  }  a.categoryBar-list-link:hover:after {    width: 90%;    left: 1%;    transition: all 0.5s;  }  span.categoryBar-list-count {    display: block !important;    color: #fff !important;    font-size: 20px !important;  }  span.categoryBar-list-count::before {    content: '\f02d' !important;    padding-right: 15px !important;    display: inline-block;    font-weight: 600;    font-style: normal;    font-variant: normal;    font-family: 'Font Awesome 6 Free';    text-rendering: auto;    -webkit-font-smoothing: antialiased;  }  span.categoryBar-list-descr {    padding: 5px;    display: block !important;    color: #fff !important;    font-size: 20px !important;    position: relative;    right: -100%;  }  @media screen and (max-width: 650px) {    li.categoryBar-list-item {      width: 48% !important;      height: 150px !important;      margin: 5px 1% 0 1% !important;    }  }]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/css/runtime.css"/>
+      <url>/css/runtime.css</url>
+      
+        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://unpkg.zhimg.com/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 200px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
       
     </entry>
     
@@ -211,9 +222,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>分类页</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -222,22 +233,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/css/categorybar.css"/>
-      <url>/css/categorybar.css</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[#categoryBar {    width: 100% !important;  }  ul.categoryBar-list {    margin: 5px 5px 0 5px !important;    padding: 0 !important;  }  li.categoryBar-list-item {    font-weight: bold;    display: inline-block;    height: 180px !important;    margin: 5px 0.5% 0 0.5% !important;    background-image: linear-gradient(rgba(0,0,0,0.4) 25%, rgba(16,16,16,0) 100%);    border-radius: 10px;    padding: 25px 0 25px 25px !important;    box-shadow: rgba(50,50,50,0.3) 50px 50px 50px 50px inset;    overflow: hidden;    background-size: 100% !important;    background-position: center !important;  }  li.categoryBar-list-item:hover {    background-size: 110% !important;    box-shadow: inset 500px 50px 50px 50px rgba(50,50,50,0.6);  }  li.categoryBar-list-item:hover span.categoryBar-list-descr {    transition: all 0.5s;    transform: translate(-100%, 0);  }  a.categoryBar-list-link {    color: #fff !important;    font-size: 20px !important;  }  a.categoryBar-list-link::before {    content: '|  ' !important;    color: #fff !important;    font-size: 20px !important;  }  a.categoryBar-list-link:after {    content: '';    position: relative;    width: 0;    bottom: 0;    display: block;    height: 3px;    border-radius: 3px;    background-color: #fff;  }  a.categoryBar-list-link:hover:after {    width: 90%;    left: 1%;    transition: all 0.5s;  }  span.categoryBar-list-count {    display: block !important;    color: #fff !important;    font-size: 20px !important;  }  span.categoryBar-list-count::before {    content: '\f02d' !important;    padding-right: 15px !important;    display: inline-block;    font-weight: 600;    font-style: normal;    font-variant: normal;    font-family: 'Font Awesome 6 Free';    text-rendering: auto;    -webkit-font-smoothing: antialiased;  }  span.categoryBar-list-descr {    padding: 5px;    display: block !important;    color: #fff !important;    font-size: 20px !important;    position: relative;    right: -100%;  }  @media screen and (max-width: 650px) {    li.categoryBar-list-item {      width: 48% !important;      height: 150px !important;      margin: 5px 1% 0 1% !important;    }  }]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/css/runtime.css"/>
-      <url>/css/runtime.css</url>
-      
-        <content type="html"><![CDATA[/*电子钟字体*/@font-face {  font-family: 'UnidreamLED';  src: url("https://unpkg.zhimg.com/akilar-candyassets/fonts/UnidreamLED.ttf");  font-display: swap;}div#runtime {  width: 200px;  margin: auto;  color: #fff;  padding-inline: 5px;  border-radius: 10px;  background-color: rgba(0,0,0,0.7);  font-family: 'UnidreamLED';}[data-theme="dark"] div#runtime {  color: #28b4c8;  box-shadow: 0 0 5px rgba(28,69,218,0.71);  animation: flashlight 1s linear infinite alternate;}/*悬停显示徽标提示语*/a.github-badge:hover:before {  position: fixed;  width: fit-content;  margin: auto;  left: 0;  right: 0;  top: 10%;  border-radius: 10px;  text-align: center;  z-index: 100;  content: attr(data-title);  font-size: 20px;  color: #fff;  padding: 10px;  background-color: var(--text-bg-hover);}[data-theme=dark] a.github-badge:hover:before {  background-color: rgba(18,18,18,0.8);}@-moz-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-webkit-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@-o-keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}@keyframes flashlight {  from {    box-shadow: 0 0 5px #1478d2;  }  to {    box-shadow: 0 0 2px #1478d2;  }}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
