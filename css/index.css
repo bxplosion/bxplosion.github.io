@@ -27373,8 +27373,8 @@ div#runtime {
     position: fixed;
     width: 350px;
     height: 350px;
-    right: 10px;
-    bottom: 200px;
+    right: 0px;
+    bottom: 150px;
     z-index: 999;
 }
 
