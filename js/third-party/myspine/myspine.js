@@ -189,11 +189,11 @@ MySpine.prototype = {
     },
     playRandAnimation: function(t) {
         if (Array.isArray(t)) {
-            e = t[Number.parseInt(Math.random()*t.length)];
+            e = t[Number.parseInt(Math.random() * t.length)];        
             this.widget.state.setAnimation(0, e.name, e.loop);
         } else {
             this.widget.state.setAnimation(0, t.name, t.loop);
-        }
+            } 
     },
     playVoice: function(t) {
         voiceUrl = this.getUrl(t.voice);
@@ -234,8 +234,8 @@ MySpine.prototype = {
         return !1;
     },
     changeIdleAnimation: function() {
-        var t = Date.now()
-          , e = t - this.lastInteractTime;
+        var t = Date.now(),
+        e = t - this.lastInteractTime;
         if ((this.isIdle() && e/1e3/60 >= this.config.behaviors.idle.maxMinutes) || 
             (this.isInteract() && e/1e3 >= this.config.behaviors.interact.maxPlaySec)) {
              this.lastInteractTime = t,
