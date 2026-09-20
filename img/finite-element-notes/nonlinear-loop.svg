@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 570" role="img" aria-labelledby="title desc">
+  <title id="title">约束与Newton非线性迭代</title>
+  <desc id="desc">从当前状态计算残量和切线刚度、更新未知量并判断收敛的非线性有限元循环。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="570" rx="28" fill="#fbfdff"/>
+  <text x="640" y="55" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">非线性有限元：用切线问题逐步逼近平衡状态</text>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <rect x="75" y="185" width="220" height="120" rx="20" fill="#e8f3ff" stroke="#6ea8d6" stroke-width="2"/>
+    <text x="185" y="230" fill="#1f4f75" font-size="23" font-weight="700">当前状态</text>
+    <text x="185" y="267" fill="#315d7d" font-size="20">u⁽ⁱ⁾，内变量 q⁽ⁱ⁾</text>
+    <rect x="385" y="185" width="220" height="120" rx="20" fill="#fff0da" stroke="#e3a150" stroke-width="2"/>
+    <text x="495" y="230" fill="#8a4b09" font-size="23" font-weight="700">线性化</text>
+    <text x="495" y="267" fill="#805522" font-size="19">R(u⁽ⁱ⁾), Kₜ(u⁽ⁱ⁾)</text>
+    <rect x="695" y="185" width="220" height="120" rx="20" fill="#eaf7ef" stroke="#65b77f" stroke-width="2"/>
+    <text x="805" y="230" fill="#226b3a" font-size="23" font-weight="700">求校正量</text>
+    <text x="805" y="267" fill="#317447" font-size="19">Kₜ Δu = −R</text>
+    <rect x="1005" y="185" width="200" height="120" rx="20" fill="#f2eafb" stroke="#a17ac2" stroke-width="2"/>
+    <text x="1105" y="230" fill="#684284" font-size="23" font-weight="700">更新与判定</text>
+    <text x="1105" y="267" fill="#704b8e" font-size="18">u⁽ⁱ⁺¹⁾ = u⁽ⁱ⁾ + Δu</text>
+  </g>
+  <g stroke="#55758f" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M300 245 H375"/><path d="M610 245 H685"/><path d="M920 245 H995"/>
+    <path d="M1105 315 V405 C1105 462 185 462 185 315" fill="none"/>
+  </g>
+  <rect x="415" y="384" width="450" height="95" rx="17" fill="#fff7e9" stroke="#e3a150" stroke-width="2"/>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <text x="640" y="423" fill="#805522" font-size="20">若 ‖R‖ / (1 + ‖f‖) ≤ tol，则该载荷步/时间步收敛</text>
+    <text x="640" y="455" fill="#805522" font-size="17">否则回到当前状态，必要时使用线搜索、减小增量或改善切线</text>
+  </g>
+  <text x="640" y="530" text-anchor="middle" fill="#47715c" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18">约束改变可行空间；非线性改变平衡方程本身。两者都应由残量与反力共同核查。</text>
+</svg>

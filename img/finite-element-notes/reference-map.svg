@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 540" role="img" aria-labelledby="title desc">
+  <title id="title">等参单元映射</title>
+  <desc id="desc">从参考单元到物理四边形单元的形函数映射与Jacobian。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1300" height="540" rx="28" fill="#fbfdff"/>
+  <text x="650" y="54" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">等参映射：在规则参考单元上定义形函数，再映射到真实几何</text>
+  <g stroke="#4f85b1" stroke-width="3" fill="#e7f2ff">
+    <path d="M160 135 H490 V425 H160 Z"/>
+  </g>
+  <g stroke="#e3a150" stroke-width="3" fill="#fff0da">
+    <path d="M830 165 L1130 125 L1190 400 L770 425 Z"/>
+  </g>
+  <g stroke="#94b5cf" stroke-width="2" stroke-dasharray="7 7">
+    <path d="M325 118 V448"/>
+    <path d="M140 280 H510"/>
+  </g>
+  <g stroke="#dfbd7f" stroke-width="2" stroke-dasharray="7 7">
+    <path d="M980 118 L980 455"/>
+    <path d="M745 290 L1210 290"/>
+  </g>
+  <g stroke="#55758f" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M555 278 H730"/>
+  </g>
+  <g fill="#1f4f75" font-family="Microsoft YaHei, Arial, sans-serif">
+    <text x="325" y="105" text-anchor="middle" font-size="25" font-weight="700">参考单元  Ω̂</text>
+    <text x="325" y="485" text-anchor="middle" font-size="20">−1 ≤ ξ, η ≤ 1</text>
+    <text x="980" y="105" text-anchor="middle" font-size="25" font-weight="700">物理单元  Ωᵉ</text>
+    <text x="980" y="485" text-anchor="middle" font-size="20">x(ξ,η) = Σ Nᵢ(ξ,η) Xᵢ</text>
+    <text x="642" y="245" text-anchor="middle" font-size="20">J = ∂x / ∂ξ</text>
+    <text x="642" y="315" text-anchor="middle" font-size="18">∇ₓN = J⁻ᵀ∇ξN</text>
+  </g>
+  <g fill="#315d7d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="19">
+    <text x="150" y="130">4</text><text x="500" y="130">3</text><text x="500" y="449">2</text><text x="150" y="449">1</text>
+    <text x="812" y="158">4</text><text x="1134" y="117">3</text><text x="1198" y="421">2</text><text x="755" y="445">1</text>
+    <text x="332" y="267">ξ</text><text x="344" y="155">η</text>
+  </g>
+</svg>

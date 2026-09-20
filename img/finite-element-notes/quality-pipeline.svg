@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1390 500" role="img" aria-labelledby="title desc">
+  <title id="title">有限元可信度：误差、求解器与材料模型</title>
+  <desc id="desc">网格误差、线性方程求解、材料积分和后处理共同决定有限元结果的可信度。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1390" height="500" rx="28" fill="#fbfdff"/>
+  <text x="695" y="55" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">可信结果由多个误差层共同决定，而不是只看求解器有没有退出</text>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <rect x="65" y="145" width="250" height="190" rx="20" fill="#e8f3ff" stroke="#6ea8d6" stroke-width="2"/>
+    <text x="190" y="196" fill="#1f4f75" font-size="24" font-weight="700">离散误差</text>
+    <text x="190" y="235" fill="#315d7d" font-size="18">h、p 与单元质量</text>
+    <text x="190" y="265" fill="#315d7d" font-size="18">奇异性与自适应</text>
+    <rect x="385" y="145" width="250" height="190" rx="20" fill="#fff0da" stroke="#e3a150" stroke-width="2"/>
+    <text x="510" y="196" fill="#8a4b09" font-size="24" font-weight="700">代数误差</text>
+    <text x="510" y="235" fill="#805522" font-size="18">稀疏矩阵、条件数</text>
+    <text x="510" y="265" fill="#805522" font-size="18">预条件与迭代残量</text>
+    <rect x="705" y="145" width="250" height="190" rx="20" fill="#eaf7ef" stroke="#65b77f" stroke-width="2"/>
+    <text x="830" y="196" fill="#226b3a" font-size="24" font-weight="700">本构误差</text>
+    <text x="830" y="235" fill="#317447" font-size="18">弹塑性积分与路径</text>
+    <text x="830" y="265" fill="#317447" font-size="18">一致切线刚度</text>
+    <rect x="1025" y="145" width="300" height="190" rx="20" fill="#f2eafb" stroke="#a17ac2" stroke-width="2"/>
+    <text x="1175" y="196" fill="#684284" font-size="24" font-weight="700">工程可信度</text>
+    <text x="1175" y="235" fill="#704b8e" font-size="18">量纲、平衡、反力</text>
+    <text x="1175" y="265" fill="#704b8e" font-size="18">网格/步长收敛性</text>
+  </g>
+  <g stroke="#55758f" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M320 240 H375"/><path d="M640 240 H695"/><path d="M960 240 H1015"/>
+  </g>
+  <text x="695" y="420" text-anchor="middle" fill="#47715c" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20">建议按“模型 → 网格 → 约束 → 求解 → 后处理”的顺序排查；不要把数值噪声误认为物理现象。</text>
+</svg>

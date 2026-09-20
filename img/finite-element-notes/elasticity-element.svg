@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 520" role="img" aria-labelledby="title desc">
+  <title id="title">三角形线弹性单元的位移到应力链</title>
+  <desc id="desc">三节点三角形单元、节点自由度、B矩阵和单元刚度矩阵关系。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1320" height="520" rx="28" fill="#fbfdff"/>
+  <text x="660" y="55" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">线弹性单元：节点自由度经过 B 和 D 变为内力</text>
+  <path d="M125 395 L390 135 L535 410 Z" fill="#e8f3ff" stroke="#4f85b1" stroke-width="4"/>
+  <g fill="#d75f48" stroke="#fff" stroke-width="3">
+    <circle cx="125" cy="395" r="13"/><circle cx="390" cy="135" r="13"/><circle cx="535" cy="410" r="13"/>
+  </g>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" fill="#315d7d">
+    <text x="85" y="440" font-size="20">节点 1: (u₁,v₁)</text>
+    <text x="362" y="104" font-size="20">节点 2: (u₂,v₂)</text>
+    <text x="520" y="455" font-size="20">节点 3: (u₃,v₃)</text>
+    <text x="290" y="335" font-size="22" font-weight="700">Ωᵉ</text>
+  </g>
+  <g stroke="#55758f" stroke-width="4" marker-end="url(#arrow)">
+    <path d="M590 275 H700"/>
+    <path d="M920 275 H1030"/>
+  </g>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <rect x="710" y="160" width="200" height="220" rx="18" fill="#fff0da" stroke="#e3a150" stroke-width="2"/>
+    <text x="810" y="214" fill="#8a4b09" font-size="24" font-weight="700">应变</text>
+    <text x="810" y="258" fill="#805522" font-size="21">ε = B aᵉ</text>
+    <text x="810" y="302" fill="#805522" font-size="17">由形函数导数构造</text>
+    <text x="810" y="332" fill="#805522" font-size="17">几何关系</text>
+    <rect x="1040" y="160" width="200" height="220" rx="18" fill="#eaf7ef" stroke="#65b77f" stroke-width="2"/>
+    <text x="1140" y="214" fill="#226b3a" font-size="24" font-weight="700">应力与刚度</text>
+    <text x="1140" y="258" fill="#317447" font-size="21">σ = D ε</text>
+    <text x="1140" y="302" fill="#317447" font-size="20">kᵉ = ∫ BᵀDB dΩ</text>
+    <text x="1140" y="332" fill="#317447" font-size="17">材料与平衡</text>
+  </g>
+  <text x="340" y="492" text-anchor="middle" fill="#1f4f75" font-family="Microsoft YaHei, Arial, sans-serif" font-size="19">aᵉ = [u₁ v₁ u₂ v₂ u₃ v₃]ᵀ</text>
+</svg>

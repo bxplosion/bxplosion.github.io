@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 430" role="img" aria-labelledby="title desc">
+  <title id="title">有限元计算主线</title>
+  <desc id="desc">从连续体模型、弱形式、离散、组装到求解和验证的有限元工作流。</desc>
+  <defs>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#e8f3ff"/>
+      <stop offset="1" stop-color="#cfe7ff"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff1df"/>
+      <stop offset="1" stop-color="#ffe0b2"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1440" height="430" rx="28" fill="#fbfdff"/>
+  <text x="720" y="55" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="31" font-weight="700">有限元不是一条公式，而是一条可验证的建模链</text>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <g>
+      <rect x="45" y="125" width="190" height="165" rx="20" fill="url(#blue)" stroke="#6ea8d6" stroke-width="2"/>
+      <text x="140" y="177" fill="#1f4f75" font-size="25" font-weight="700">连续体模型</text>
+      <text x="140" y="216" fill="#315d7d" font-size="18">几何、材料、荷载</text>
+      <text x="140" y="244" fill="#315d7d" font-size="18">强形式与边界条件</text>
+    </g>
+    <g>
+      <rect x="285" y="125" width="190" height="165" rx="20" fill="url(#blue)" stroke="#6ea8d6" stroke-width="2"/>
+      <text x="380" y="177" fill="#1f4f75" font-size="25" font-weight="700">弱形式</text>
+      <text x="380" y="216" fill="#315d7d" font-size="18">虚功 / 加权余量</text>
+      <text x="380" y="244" fill="#315d7d" font-size="18">函数空间与测试函数</text>
+    </g>
+    <g>
+      <rect x="525" y="125" width="190" height="165" rx="20" fill="url(#orange)" stroke="#e3a150" stroke-width="2"/>
+      <text x="620" y="177" fill="#8a4b09" font-size="25" font-weight="700">单元离散</text>
+      <text x="620" y="216" fill="#805522" font-size="18">网格、形函数、积分</text>
+      <text x="620" y="244" fill="#805522" font-size="18">单元矩阵与荷载</text>
+    </g>
+    <g>
+      <rect x="765" y="125" width="190" height="165" rx="20" fill="url(#orange)" stroke="#e3a150" stroke-width="2"/>
+      <text x="860" y="177" fill="#8a4b09" font-size="25" font-weight="700">总体方程</text>
+      <text x="860" y="216" fill="#805522" font-size="19">K a = f</text>
+      <text x="860" y="244" fill="#805522" font-size="18">约束与稀疏装配</text>
+    </g>
+    <g>
+      <rect x="1005" y="125" width="190" height="165" rx="20" fill="url(#blue)" stroke="#6ea8d6" stroke-width="2"/>
+      <text x="1100" y="177" fill="#1f4f75" font-size="25" font-weight="700">数值求解</text>
+      <text x="1100" y="216" fill="#315d7d" font-size="18">线性 / 非线性迭代</text>
+      <text x="1100" y="244" fill="#315d7d" font-size="18">时间积分与收敛</text>
+    </g>
+    <g>
+      <rect x="1245" y="125" width="150" height="165" rx="20" fill="#eaf7ef" stroke="#65b77f" stroke-width="2"/>
+      <text x="1320" y="177" fill="#226b3a" font-size="25" font-weight="700">验证</text>
+      <text x="1320" y="216" fill="#317447" font-size="18">误差、网格</text>
+      <text x="1320" y="244" fill="#317447" font-size="18">量纲与平衡</text>
+    </g>
+  </g>
+  <g stroke="#55758f" stroke-width="3.5" marker-end="url(#arrow)">
+    <path d="M240 207 H275"/>
+    <path d="M480 207 H515"/>
+    <path d="M720 207 H755"/>
+    <path d="M960 207 H995"/>
+    <path d="M1200 207 H1235"/>
+  </g>
+  <path d="M1320 305 C1320 365 185 365 140 305" fill="none" stroke="#65b77f" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#arrow)"/>
+  <text x="730" y="399" text-anchor="middle" fill="#47715c" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17">验证发现偏差时，应回到模型、网格或求解设置，而不只是“再跑一次”。</text>
+</svg>

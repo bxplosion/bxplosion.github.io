@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 500" role="img" aria-labelledby="title desc">
+  <title id="title">瞬态问题的离散时间轴</title>
+  <desc id="desc">热传导和结构动力学在每个时间步构造有效方程并求解的过程。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#55758f"/>
+    </marker>
+  </defs>
+  <rect width="1300" height="500" rx="28" fill="#fbfdff"/>
+  <text x="650" y="55" text-anchor="middle" fill="#18344d" font-family="Microsoft YaHei, Arial, sans-serif" font-size="30" font-weight="700">瞬态有限元：空间离散后，时间积分把演化问题拆成一个个可求的步</text>
+  <line x1="115" y1="270" x2="1175" y2="270" stroke="#55758f" stroke-width="5" marker-end="url(#arrow)"/>
+  <g fill="#4f85b1" stroke="#fff" stroke-width="3">
+    <circle cx="190" cy="270" r="18"/><circle cx="460" cy="270" r="18"/><circle cx="730" cy="270" r="18"/><circle cx="1000" cy="270" r="18"/>
+  </g>
+  <g font-family="Microsoft YaHei, Arial, sans-serif" text-anchor="middle">
+    <text x="190" y="320" fill="#315d7d" font-size="20">tₙ</text>
+    <text x="460" y="320" fill="#315d7d" font-size="20">tₙ₊₁</text>
+    <text x="730" y="320" fill="#315d7d" font-size="20">tₙ₊₂</text>
+    <text x="1000" y="320" fill="#315d7d" font-size="20">…</text>
+    <rect x="270" y="125" width="380" height="90" rx="16" fill="#fff0da" stroke="#e3a150" stroke-width="2"/>
+    <text x="460" y="163" fill="#8a4b09" font-size="22" font-weight="700">热传导：C Ṫ + K T = f</text>
+    <text x="460" y="195" fill="#805522" font-size="18">θ 法构造 Tₙ₊₁ 的线性方程</text>
+    <rect x="760" y="125" width="380" height="90" rx="16" fill="#eaf7ef" stroke="#65b77f" stroke-width="2"/>
+    <text x="950" y="163" fill="#226b3a" font-size="22" font-weight="700">动力学：M ü + C u̇ + K u = f</text>
+    <text x="950" y="195" fill="#317447" font-size="18">Newmark 同时更新 u、u̇、ü</text>
+    <text x="650" y="410" fill="#47715c" font-size="20">每一步都要：施加边界条件 → 求解 → 检查稳定性与能量/温度演化 → 输出状态</text>
+  </g>
+</svg>
